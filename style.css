@@ -143,13 +143,16 @@ input[type=checkbox]{
     margin: 15px;
     display: flex;
     justify-content:center;
-    gap: 30px 35px;
+    gap: 30px 10%;
+    margin: 0 10%;
     flex-direction: row;
     
 }
 
 .flex-item{
     min-width:300px;
+    max-width: 500px;
+    min-height: 800px;
     flex-grow: 1;
     flex-basis: 0;
     text-align: center;
@@ -157,6 +160,7 @@ input[type=checkbox]{
 
 .flex-item h2{
     font-size: 4vh;
+    margin-bottom: 3vh;
 }
 
    /* APPLYING MEDIA QUERIES */
@@ -214,8 +218,6 @@ input[type=checkbox]{
         align-content: stretch;
     }
     .flex-item{
-        
-
         text-align: center;
     }
 }
@@ -225,9 +227,9 @@ a.scroll{
     position: absolute;
     bottom: 20px;
     left: 50%;
+    margin-bottom: 50px;
     z-index: 2;
     display: inline-block;
-    -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     text-decoration: none;
     color: #eee;
