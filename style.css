@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+body{
+    background-color: rgb(15, 15, 15);
+    background-image: url("./images/bg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: 'Oswald', sans-serif;
+    
+    color: #eee;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+/* shine */
+
+
+
+.sign {
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 2;
+    left: 50%;
+    top: 50%;
+    animation: turnColor 2s forwards,shine 4s alternate infinite 2s;
+}
+  
+  @keyframes turnColor{
+      100%{
+        color: #eee;
+      }
+  }
+  
+  @keyframes shine {
+    0% {
+        color: #eee;
+
+    }
+    100% {
+        color: #ffe6ff;
+        text-shadow: 0 0 0rem #ffe6ff,
+          -0.1rem 0.1rem 0rem #ff65bcc0, -0.1rem 0.1rem 0.3rem #ff65bd;
+      }
+  
+  }
+  
+
+
+/* typing */
+.heading {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.heading p {
+    font-size: 7vh;
+    padding-bottom: 23vh;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+
+    
+}
+.heading p span.typed-text {
+    font-weight: normal;
+
+    color: #ffccffd7;
+}
+
+/* Navbar */
+
+#logo{
+    width: 80%;
+    vertical-align: middle;
+    margin: 3px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+#hicon{
+    vertical-align: middle; 
+    width: 80%;
+    margin-bottom: 2px;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(58, 58, 58);
+    color: #fff;
+    min-height: 5vh;
+}
+.nav-links a {
+    color: #fff;
+}
+   /* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    margin-right: 2vh;
+}
+.menu li:hover {
+    background-color: #b30202be;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+.menu li {
+    padding: 5px 14px;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* feature on main page */
+
+.flex-container{
+    margin: 15px;
+    display: flex;
+    justify-content:center;
+    gap: 30px 35px;
+    flex-direction: row;
+    
+}
+
+.flex-item{
+    min-width:300px;
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+}
+
+.flex-item h2{
+    font-size: 4vh;
+}
+
+   /* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color:teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    margin-right: 0;
+   }
+   .menu li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: inline-block;
+
+   }
+   .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+   }
+   .dropdown li:hover {
+    background-color: #4c9e9e;
+   }
+   .heading{
+    background-color: rgb(54, 109, 190);
+    height: 90vh;
+    padding-top: 5vh;
+   }
+
+   .heading p span.typed-text {
+    text-shadow: none;
+   }
+
+
+}
+
+@media (max-width: 1000px) {
+    .flex-container{
+        flex-direction: column;
+        
+        align-content: stretch;
+    }
+    .flex-item{
+        
+
+        text-align: center;
+    }
+}
+
+/* scroll */
+a.scroll{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-decoration: none;
+    color: #eee;
+    padding-top: 70px;
+  }
+
+  a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: rotate(-45deg);
+    animation: sdb 1.5s infinite;
+    box-sizing: border-box;
+  }
+
+  @keyframes sdb {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
