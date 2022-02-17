@@ -152,7 +152,7 @@ input[type=checkbox]{
 .flex-item{
     min-width:300px;
     max-width: 500px;
-    min-height: 800px;
+    min-height: 100vh;
     flex-grow: 1;
     flex-basis: 0;
     text-align: center;
@@ -214,11 +214,12 @@ input[type=checkbox]{
 @media (max-width: 1000px) {
     .flex-container{
         flex-direction: column;
-        
-        align-content: stretch;
+        justify-content:center;
+        align-content: center;
     }
     .flex-item{
         text-align: center;
+        max-width: none;
     }
 }
 
@@ -262,4 +263,8 @@ a.scroll{
       transform: rotate(-45deg) translate(-20px, 20px);
       opacity: 0;
     }
+  }
+
+  img.demo-image{
+      height: 60vh;
   }
