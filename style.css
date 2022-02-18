@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 body{
     background-color: rgb(15, 15, 15);
-    background-image: url("./images/bg.jpg");
+    
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: top;
-    font-family: 'Oswald', sans-serif;
     
+    font-family: 'Oswald', sans-serif;
     color: #eee;
 }
 html {
     scroll-behavior: smooth;
   }
+p{
+    font-size: 1.2rem;
+}
 
 /* shine */
 
@@ -105,6 +107,7 @@ li {
     background-color: rgb(58, 58, 58);
     color: #fff;
     min-height: 5vh;
+    height: 6vh;
 }
 .nav-links a {
     color: #fff;
@@ -152,19 +155,31 @@ input[type=checkbox]{
 .flex-item{
     min-width:300px;
     max-width: 500px;
-    min-height: 100vh;
+    min-height: 65vh;
+    margin: 3vh 0;
+    
     flex-grow: 1;
     flex-basis: 0;
     text-align: center;
 }
 
 .flex-item h2{
-    font-size: 4vh;
+    font-size: 5vh;
     margin-bottom: 3vh;
 }
 
-   /* APPLYING MEDIA QUERIES */
-@media (max-width: 768px) {
+
+@media (max-width: 1000px) {
+    .flex-container{
+        flex-direction: column;
+        justify-content:center;
+        align-content: center;
+    }
+    .flex-item{
+        text-align: center;
+        max-width: none;
+        margin-bottom: 22vh;
+    }
    .menu { 
     display:none;
     position: absolute;
@@ -211,17 +226,6 @@ input[type=checkbox]{
 
 }
 
-@media (max-width: 1000px) {
-    .flex-container{
-        flex-direction: column;
-        justify-content:center;
-        align-content: center;
-    }
-    .flex-item{
-        text-align: center;
-        max-width: none;
-    }
-}
 
 /* scroll */
 a.scroll{
@@ -266,5 +270,6 @@ a.scroll{
   }
 
   img.demo-image{
-      height: 60vh;
+      width: 60%;
+      margin: 10px 0 5vh ;
   }
