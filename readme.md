@@ -27,6 +27,7 @@ Please visit the landing page for Musing [here](https://lewiseng.github.io/Assig
  - [Unsplash (background image)](https://unsplash.com/)
  - [FreeIcon (icons)](https://freeicons.io/)
  - [Typeform (survey)](https://www.typeform.com/)
+ - [Responsive Navigation Bar](https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/)
  - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
 
 ## License
