@@ -4,9 +4,9 @@ const typedTextSpan = document.querySelector(".typed-text");
 const textArray = ["Stream", "Rate", "Share", "Musing"];
 const colorList = ["#b4f06f","#f2ff40","#b5f4ff","#ffccffd7"];
 
-const typingDelay = 200;
+const typingDelay = 150;
 const erasingDelay = 150;
-const newTextDelay = 700; // Delay between current and next text
+const newTextDelay = 500; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = textArray[0].length;
 
