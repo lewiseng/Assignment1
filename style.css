@@ -156,7 +156,7 @@ input[type=checkbox]{
     min-width:300px;
     max-width: 500px;
     min-height: 65vh;
-    margin: 3vh 0;
+    margin: 3vh 0vh 15vh;
     
     flex-grow: 1;
     flex-basis: 0;
